@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão Monetária</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="conteudo">
+            <h1 class="conteudo__titulo">Conversor Monetário (BRL)</h1>
+            <div class="conteudo__valores">
+                <span class="erro">Somente valores positivos!</span>
+                <input type="number" name="moeda1" id="entrada-moeda" class="conteudo__valores-entrada" required>
+                <fieldset class="conteudo-selecao">
+                    <select name="" id="" class="selecao">
+                        <option value="USD-BRL" class="selecao__item">Dólar Comercial (USD)</option>
+                        <option value="USDT-BRL" class="selecao__item">Dólar Turismo (USDT)</option>
+                        <option value="CAD-BRL" class="selecao__item">Dólar Canadense (CAD)</option>
+                        <option value="AUD-BRL" class="selecao__item">Dólar Australiano (AUD)</option>
+                        <option value="EUR-BRL" class="selecao__item">Euro (EUR)</option>
+                        <option value="GBP-BRL" class="selecao__item">Libra Esterlina (GBP)</option>
+                        <option value="ARS-BRL" class="selecao__item">Peso Argentino (ARS)</option>
+                        <option value="JPY-BRL" class="selecao__item">Iene Japonês (JPY)</option>
+                        <option value="CHF-BRL" class="selecao__item">Franco Suíço (CHF)</option>
+                        <option value="CNY-BRL" class="selecao__item">Yuan Chinês (CNY)</option>
+                        <option value="YLS-BRL" class="selecao__item">Novo Shekel Israelense (YLS)</option>
+                        <option value="BTC-BRL" class="selecao__item">Bitcoin (BTC)</option>
+                        <option value="LTC-BRL" class="selecao__item">Litecoin (LTC)</option>
+                        <option value="ETH-BRL" class="selecao__item">Ethereum (ETH)</option>
+                        <option value="XRP-BRL" class="selecao__item">Ripple (XRP)</option>
+                    </select>
+                </fieldset>
+                <input type="number" name="moeda2" id="cotacao-real" class="conteudo__valores-entrada" readonly>
+                <label for="cotacao-real">Real (BRL)</label>
+            </div>
+            <img src="./assets/img/Banker_taking_clients_money_for_saving-removebg-preview.png" alt="Bandeira vetor criado por pch.vector - br.freepik.com" class="conteudo__img">
+            <input type="button" value="Converter" class="conteudo__botao">
+        </div>
+        <a href="https://docs.awesomeapi.com.br/api-de-moedas" class="conteudo__link"><span>Dados de câmbio disponibilizados pela API de Cotações de Moedas</span></a>
+    </section>
+</body>
+</html>
+<script src="./js/conversor.js"></script>
