@@ -1,4 +1,4 @@
-# conversor-monetario #
+# currency-converter #
 
 A currency converter using AwesomeAPI that converts other currencies to Reais (BRL)
 
